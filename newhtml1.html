@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
+			<title></title>
+			<style>
+div {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+
+
+.pinkbox{
+    background-color: #F288D5;
+}
+
+.bluebox{
+    background-color: #438EEA;
+}
+
+.yellowbox{
+    background-color: #F4ED79;
+    grid-column: span 2;
+}
+
+
+
+/* -------------------- */
+/* Demonstration: Grid */
+
+.sectiongrid{
+    border: 1px solid black;
+    background-color:gainsboro;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+}
+
+</style>
+		</head>
+		<body>
+		<section class="sectiongrid">
+    <div class="pinkbox pink_g">1</div>
+    <div class="bluebox blue_g">2</div>
+    <div class="pinkbox pink_g">3</div>
+    <div class="bluebox blue_g">4</div>
+    <div class="pinkbox pink_g">5</div>
+    <div class="bluebox blue_g">6</div>
+    <div class="yellowbox yellow_g">7</div>
+</section>
+		</body>
+		</html>		

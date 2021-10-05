@@ -1,0 +1,65 @@
+h4 {
+  text-decoration: underline;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+ol.c {
+  list-style-type: upper-roman;
+}
+footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23%;
+  border: 5px solid #482E74;
+}
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid #AA9F39;
+}
+table {
+  border-spacing: .5em .5em;
+  padding: 0 2em 1em 0;
+
+}
+
+td {
+  width: 0.5em;
+  height: 0.5em;
+ 
+  text-align: center;
+  vertical-align: middle;
+}
+body, html {
+  height: 100%;
+}
+
+.fas fa-atom {
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
