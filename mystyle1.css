@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+        <html>
+        <style>
+div {
+    text-align: left;
+    color: black;
+    font-size: 1.5em;
+}
+
+
+
+.greybox{
+    background-color: #667377;
+}
+
+.bluebox1{
+    background-color: #A19A82;
+}
+
+
+.yellowbox{
+    background-color: #DDDA95;
+    grid-column: span 2;
+    height: 100px;
+}
+
+
+.greybox{
+    background-color: #667377;
+    text-align: justify;
+}
+
+.greybox1{
+    background-color: #667377;
+    text-align: center;
+}
+.greybox2{
+    background-color: #667377;
+    text-align: left;
+    font-size: 24px;
+}
+
+
+.yellowbox{
+    background-color: #DDDA95;
+    grid-column: span 2;
+    height: 100px;
+        text-align: left;
+}
+.yellowbox1{
+    background-color: #DDDA95;
+    grid-column: span 2;
+    height: 100px;
+    text-align: center;
+}
+
+
+
+/* -------------------- */
+/* Demonstration: Grid */
+
+
+.sectiongrid{
+    border: 1px solid black;
+    background-color:lightgrey;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 15px;
+    font-family: 'Scheherazade', serif;
+
+
+}
+.sectiongrid1{
+    border: 1px solid black;
+    background-color:lightgrey;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 15px;
+    font-family: 'Scheherazade', serif;
+  
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 2vw;
+	font-family: fantasy;
+}
+a:hover{
+	background-color: #FF6400;
+}
+nav{
+	width: 100vw;
+	background-color: #00AEB6;
+}
+li{
+	list-style-type: none;
+	margin: 0 2vw;
+	font-size: 2vh;
+	margin: 0
+}
+ul{
+  flex-direction: : column;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body{
+	margin: 0;
+	background-color: lightsteelblue;
+}
+
+.me{
+	width: 250px;
+	clip-path:  circle();
+	position: -webkit-sticky;
+	position: sticky;
+	left:  1600px;
+	bottom: 590px;
+	top: 100px;
+
+
+}
+header {
+	font-family: 'Scheherazade', serif;
+	text-align: justify;
+	font-size: 100px;
+	position: relative;
+	left:  150px;
+	top: 80px;
+	text-decoration: underline;
+}
+</style>
+</html>     
