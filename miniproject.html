@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>miniproject</title>
+</head>
+<body>
+<button onclick="playTheGame()">button</button>
+<script>
+
+function playTheGame() {
+  computerNumber = Math.round(Math.random())
+  var userNumber = confirm("would you like to play the game?");
+  if (userNumber !== true) {
+  	alert("No problem, Goodbye");
+  	return
+ }else{
+var userNumber = prompt("Please, enter a number between 0 and 10");
+  }if(isNaN(userNumber)){
+    alert("Sorry Not a number, Goodbye");
+    return
+  }
+ if(userNumber = userNumber < 0 || userNumber > 10){
+ 	alert("Sorry it’s not a good number, Goodbye");
+ }
+else{
+  alert(computerNumber);
+  test(userNumber, computerNumber);
+ }
+}
+
+
+function test(userNumber, computerNumber){
+  for (let i = 0; i < 3; i++) {
+    if (userNumber === computerNumber) {
+      alert("WINNER");
+    } else if (i === 2) {
+      alert("Out of chances");
+    } else if (userNumber > computerNumber) {
+      alert("Your number is bigger then the computer’s, guess again");
+      userNumber = Number(prompt("Please, enter a number between 0 and 10"));
+    } else {
+      alert("Your number is smaller then the computer’s, guess again");
+      userNumber = Number(prompt("Please, enter a number between 0 and 10"));
+    };
+  };
+}
+</script>
+</body>
+</html>
+
