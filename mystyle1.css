@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-        <html>
-        <style>
+mystyle1.css
 div {
     text-align: left;
     color: black;
@@ -56,8 +54,7 @@ div {
 
 
 
-/* -------------------- */
-/* Demonstration: Grid */
+
 
 
 .sectiongrid{
@@ -138,5 +135,3 @@ header {
 	top: 80px;
 	text-decoration: underline;
 }
-</style>
-</html>     
