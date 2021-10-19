@@ -1,0 +1,28 @@
+section {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.dropzone {
+	position: relative;
+	padding: 2px;
+	margin: 2px;
+	border-width: 2px;
+	height: 10px;
+	width: 10px;
+    border:  2px solid black;
+    display:  flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.square {
+	position: absolute;
+	padding: 2px;
+	margin: 2px;
+	height: 6px;
+	width: 6px;
+    border: 2px solid yellowgreen;
+}
