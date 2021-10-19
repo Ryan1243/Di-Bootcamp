@@ -1,0 +1,23 @@
+<!doctype>
+	<html>
+	<body>
+		<input type="text" id="txtName" onKeypress="return Validate(event);"/>
+		<span id="Therror" style="color: red"></span>
+		<script>
+			function Validate(e) {
+				var KeyCode = e.KeyCode || e.which;
+
+				var Therror = document.getElementById("Therror");
+				Therror.innerHTML = "";
+
+				var regex = /^[A-Za-z]+$/;
+
+				var isValid = regex.test(String.fromCharCode(KeyCode));
+				if (!isValid) {
+					Therror.innerHTML = "Only Aphabets allows.";
+				}
+				return isValid;
+			}
+		</script>
+	</body>
+	</html>
