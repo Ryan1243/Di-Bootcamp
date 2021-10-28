@@ -1,0 +1,62 @@
+@import url('http://fonts.cdnfonts.com/css/hvd-comic-serif');
+@import url('http://fonts.cdnfonts.com/css/archery-black');
+
+
+.table{
+
+	font-family: 'HVD Comic Serif Pro', sans-serif;
+
+	font-size: 22px;
+	margin: 0 auto;
+	max-width: 340px;
+    gap: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+      } 
+@media only screen and (min-width: 600px){
+   #myTable{
+   	display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+   }
+
+tr {
+	margin: 0px;
+	max-width: 340px;
+    display: grid;
+    gap:  20px;
+    margin-top: 20px;
+    background: url(card-pattern.png);
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border: 1px solid black;
+	border-radius: 15px;
+	justify-items: center;
+}
+
+body {
+	background-image: url(circuit-pattern1.png);
+	
+	background-color: purple;
+
+}
+
+#search-input{
+	position: absolute;
+	top: 30px;
+	left:  250px;
+	width: 500px;
+	height: 30px;
+}
+
+.Search{
+	font-family: 'SF Archery Black SC', sans-serif;
+	font-size: 50px;
+	justify-content: start;
+    background: -webkit-radial-gradient(right bottom, #605AFF, #00BF0C);
+    margin: 0;
+    border-radius: 10px;
+
+}

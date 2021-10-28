@@ -1,0 +1,150 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="MiniProjectRobo.css">
+
+<style>
+    th{ 
+        cursor: pointer;
+        color:#fff;
+            }
+</style>
+<body>
+<div>
+    <div>
+        <div class="Search">
+Search Bar:
+            <input id="search-input" class="form-control" type="text"></div>
+
+        </div>
+    </div>
+</div>
+
+<table class="table">
+ 
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+</body>
+
+
+<script>
+      const robots = [
+          {
+            id: 1,
+            name: 'Leanne Graham',
+            username: 'Bret',
+            email: 'Sincere@april.biz',
+            image: 'https://robohash.org/1?200x200'
+          },
+          {
+            id: 2,
+            name: 'Ervin Howell',
+            username: 'Antonette',
+            email: 'Shanna@melissa.tv',
+            image: 'https://robohash.org/2?200x200'
+          },
+          {
+            id: 3,
+            name: 'Clementine Bauch',
+            username: 'Samantha',
+            email: 'Nathan@yesenia.net',
+            image: 'https://robohash.org/3?200x200'
+          },
+          {
+            id: 4,
+            name: 'Patricia Lebsack',
+            username: 'Karianne',
+            email: 'Julianne.OConner@kory.org',
+            image: 'https://robohash.org/4?200x200'
+          },
+          {
+            id: 5,
+            name: 'Chelsey Dietrich',
+            username: 'Kamren',
+            email: 'Lucio_Hettinger@annie.ca',
+            image: 'https://robohash.org/5?200x200'
+          },
+          {
+            id: 6,
+            name: 'Mrs. Dennis Schulist',
+            username: 'Leopoldo_Corkery',
+            email: 'Karley_Dach@jasper.info',
+            image: 'https://robohash.org/6?200x200'
+          },
+          {
+            id: 7,
+            name: 'Kurtis Weissnat',
+            username: 'Elwyn.Skiles',
+            email: 'Telly.Hoeger@billy.biz',
+            image: 'https://robohash.org/7?200x200'
+          },
+          {
+            id: 8,
+            name: 'Nicholas Runolfsdottir V',
+            username: 'Maxime_Nienow',
+            email: 'Sherwood@rosamond.me',
+            image: 'https://robohash.org/8?200x200'
+          },
+          {
+            id: 9,
+            name: 'Glenna Reichert',
+            username: 'Delphine',
+            email: 'Chaim_McDermott@dana.io',
+            image:'https://robohash.org/9?200x200'
+          },
+          {
+            id: 10,
+            name: 'Clementina DuBuque',
+            username: 'Moriah.Stanton',
+            email: 'Rey.Padberg@karina.biz',
+            image:'https://robohash.org/10?200x200'
+          }
+          ];
+
+$('#search-input').on('keyup', function(){
+    var value = $(this).val()
+    console.log('Value:', value)
+    var data = searchTable(value, robots)
+    buildTable(data)
+})
+
+
+buildTable(robots)
+
+function searchTable(value, data){
+    var filteredData =[]
+
+    for (var i = 0; i < data.length; i++){
+        value = value.toLowerCase()
+        var name = data[i].name.toLowerCase()
+
+        if (name.includes(value)){
+            filteredData.push(data[i])
+        }
+    }
+    return filteredData
+}
+
+
+
+    
+function buildTable(data){
+    var table = document.getElementById('myTable')
+    table.innerHTML = ''
+    for (var i = 0; i < data.length; i++){
+        var colname = `name-${i}`
+        var colage = `username-${i}`
+        var colbirth = `email-${i}`
+        var img1 = `image-${i}`
+
+        var row = `<tr>
+                        <td>${data[i].name}</td>
+                        <td>${data[i].username}</td>
+                        <td>${data[i].email}</td>
+                        <td><img src = ${data[i].image}></td>
+                   </tr>`
+        table.innerHTML += row
+    }
+}
+
+</script>
