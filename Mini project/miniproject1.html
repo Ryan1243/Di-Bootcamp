@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>miniproject</title>
+</head>
+
+<body>
+  <button onclick="playTheGame()">Play Game</button>
+  <script>
+    function playTheGame() {
+      var computerNumber = Math.floor(Math.random() * 11);
+      var userWantsToPlay = confirm("Would you like to play the game?");
+
+      if (!userWantsToPlay) {
+        alert("No problem, Goodbye");
+        return;
+      }
+
+      var userNumber = prompt("Please enter a number between 0 and 10");
+
+      if (isNaN(userNumber) || userNumber < 0 || userNumber > 10) {
+        alert("Sorry, that's not a valid number. Goodbye");
+        return;
+      }
+
+      test(Number(userNumber), computerNumber); // Start the game with user's guess and computer's number
+    }
+
+    function test(userNumber, computerNumber) {
+      for (let i = 0; i < 3; i++) {
+        alert("Computer's number: " + computerNumber); // Show computer's number for each attempt
+
+        if (userNumber === computerNumber) {
+          alert("WINNER");
+          return;
+        } else if (i === 2) {
+          if (userNumber > computerNumber) {
+            alert("Your number is bigger than the computer’s. Computer's number is smaller.");
+          } else {
+            alert("Your number is smaller than the computer’s. Computer's number is bigger.");
+          }
+          alert("Out of chances");
+        } else if (userNumber > computerNumber) {
+          alert("Your number is bigger than the computer’s, guess again");
+          userNumber = Number(prompt("Please enter a number between 0 and 10"));
+        } else {
+          alert("Your number is smaller than the computer’s, guess again");
+          userNumber = Number(prompt("Please enter a number between 0 and 10"));
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

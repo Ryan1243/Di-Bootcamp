@@ -1,0 +1,93 @@
+mystyle.css
+ 
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1f2235;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+.navigation-link {
+  border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+}
+
+.main-container {
+  min-height: 100vh;
+ }
+
+.main_row {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.main_row h1 {
+  font-size: 5rem;
+}
+p {
+  font-size: 1.5rem;
+
+}
+
+.main_row img {
+  width: auto;
+  height: 40vh;
+
+}
+
+.about {
+  background: lightseagreen;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  color: white;
+}
+
+.card {
+  border-bottom: 8px solid #f5ba09;
+
+}
+
+
+div {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+}
+
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.img-responsive {
+
+    position: sticky;
+    clip-path:  circle();
+    left:  1600px;
+    bottom: 100px;
+    top:  100px;
+
+}
+
+
+
+
